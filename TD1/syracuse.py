@@ -1,4 +1,5 @@
 #!/bin/python3.8
+#Guillaume Chayé
 
 try:
     nb=int(input("veuillez saisir le nombre départ: "))

@@ -1,4 +1,5 @@
 #!/bin/python3.8
+#Guillaume Chayé
 
 operation=input("Veuillez saisir la multiplication: ").split("*")
 

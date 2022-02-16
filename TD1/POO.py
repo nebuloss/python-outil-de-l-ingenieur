@@ -1,7 +1,7 @@
 #!/bin/python3.8
+#Guillaume Chayé
 
 from sys import stdout
-from xmlrpc.client import Boolean
 
 class Syracuse:
     def __init__(self,value:int):
@@ -24,7 +24,10 @@ class Syracuse:
         if (filename==None):
             file=stdout
         else:
-            file=open(filename,"w")
+            try:
+                file=open(filename,"w")
+            except:
+                return
         file.write("Conjecture de Syracuse\n")
         i=0
         checked=False
