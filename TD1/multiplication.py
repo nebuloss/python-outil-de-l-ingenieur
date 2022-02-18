@@ -16,7 +16,7 @@ result=0
 i=0
 while (var<=b):
     if (b&var):
-        j=a<<i
+        j=a+a
         print(var,"*",a,"+")
         result+=j
     var<<=1 
