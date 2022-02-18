@@ -12,14 +12,15 @@ except:
     exit()
 
 var=1
+copy=a
 result=0
-i=0
-while (var<=b):
-    if (b&var):
-        a=a+a
-        j=a
-        print(var,"*",a,"+")
-        result+=j
-    var<<=1 
-    i+=1
-print("=",result)   
+while var<=b:
+    if var&b:
+        result+=a
+        print(var,"*",copy,"+")
+    a=a+a
+    var=var+var
+
+print("=",result)
+
+
